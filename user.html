@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <title>Moje książki</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial_scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column h-100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Dobre książki</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex me-auto mt-3 mt-lg-0">
+                <input class="form-control me-2"
+                       type="search"
+                       placeholder="Np. tytuł książki lub autor"
+                       aria-label="Szukaj">
+                <button class="btn btn-outline-success" type="submit">Szukaj</button>
+            </form>
+            <a href="user.html" class="nav-link">Mój profil</a>
+            <a href="login.html" class="nav-link">Zaloguj</a>
+        </div>
+    </div>
+</nav>
+<main class="bg-light text-dark h-100">
+    <section class="bg-dark text-light text-center p-2">
+        <img class="profile-pic rounded-circle p-0 my-2" src="profile_pic.jpg" alt="Zdjęcie profilowe"
+             width="300">
+        <h2>IMIĘ NAZWISKO</h2>
+        <p>Moje konto jest aktywne od 02.10.2021r.</p>
+    </section>
+    <section>
+        <ul class="nav nav-tabs bg-dark text-light d-flex justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-2 py-1 px-sm-3 py-sm-2 active" id="recommended-tab" data-bs-toggle="tab"
+                        data-bs-target="#recommended" type="button" role="tab" aria-controls="recommended"
+                        aria-selected="true">Polecone
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-2 py-1 px-sm-3 py-sm-2" id="reviews-tab" data-bs-toggle="tab"
+                        data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews"
+                        aria-selected="false">Recenzje
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-2 py-1 px-sm-3 py-sm-2" id="favourite-tab" data-bs-toggle="tab"
+                        data-bs-target="#favourite" type="button" role="tab" aria-controls="favourite"
+                        aria-selected="false">Ulubione
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link px-2 py-1 px-sm-3 py-sm-2" id="black-list-tab" data-bs-toggle="tab"
+                        data-bs-target="#black-list" type="button" role="tab" aria-controls="black-list"
+                        aria-selected="false">Czarna lista
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="recommended" role="tabpanel"
+                 aria-labelledby="recommended-tab">
+                <div class="container p-4">
+                    <div class="row row-cols-auto justify-content-center g-4">
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://2.bp.blogspot.com/-4lb7VNUTh10/WsngCY64vVI/AAAAAAAADQ4/bmD2Q68J8HYn0bd3MDo-j65OUBiohi5AwCLcBGAs/w1200-h630-p-k-no-nu/na%2Bwsch%25C3%25B3d%2Bod%2Bedenu.JPG"
+                                     class="card-img-top" alt="Okładka Na Wschód od Edenu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Na wschód od Edenu</h5>
+                                    <p class="card-text">
+                                        Powieść - uznawana za jedno z najwybitniejszych dzieł Steinbecka -
+                                        opowiada o tragicznym losie rodziny Trasków, która na przełomie XIX i XX
+                                        wieku osiedliła się...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="http://1.bp.blogspot.com/-UfbD2wu3UCs/VOCFTGvLi9I/AAAAAAAACEU/daBoSaljKA8/w1200-h630-p-k-no-nu/IMAG1376.jpg"
+                                     class="card-img-top" alt="Okładka Zbrodni i kary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Zbrodnia i kara</h5>
+                                    <p class="card-text">
+                                        Słynna powieść Fiodora Dostojewskiego, opowiadająca o losach byłego studenta
+                                        Rodiona Raskolnikowa, który postanawia zamordować i obrabować bogatą
+                                        lichwiarkę...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://www.derevolutionibus.pl/wp-content/uploads/2020/03/IMG_20200325_153510-scaled.jpg"
+                                     class="card-img-top" alt="Okładka Głosów Pamano">
+                                <div class="card-body">
+                                    <h5 class="card-title">Głosy Pamano</h5>
+                                    <p class="card-text">
+                                        Tina, zafascynowana fotografią spokojna nauczycielka, która pracuje w Sort,
+                                        robi zdjęcie starej szkoły w Torenie tuż przed jej wyburzeniem...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                <div class="container p-4">
+                    <div class="row row-cols-auto justify-content-center g-4">
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://d-tm.ppstatic.pl/kadry/cc/59/06ba78feac18ea863b90e6ec8c88.1000.jpg"
+                                     class="card-img-top" alt="Scena z filmu Księga Dżungli">
+                                <div class="card-body">
+                                    <h5 class="card-title">Księga dżungli</h5>
+                                    <p class="card-text">
+                                        Czy dziecko wychowane przez zwierzęta odnajdzie się w świecie ludzi?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://cytaty.pl/media/quote_template/2014/10/31/annewithhouse.jpg"
+                                     class="card-img-top" alt="Ania Zielonego Wzgórza">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ania z Zielonego Wzgórza</h5>
+                                    <p class="card-text">
+                                        Historia rudowłosej sieroty, Ani, przygarniętej przez rodzeństwo Marylę i
+                                        Mateusza.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://a.allegroimg.com/original/1ea56f/e5c8f5624b9e94c91d5b1c742ee3"
+                                     class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lipniacy</h5>
+                                    <p class="card-text">
+                                        Książka osnuta na tle wspomnień z własnego dzieciństwa autorki, jest historią
+                                        autentycznej zabawy dziecięcej, trwającej przez okres wakacji...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="favourite" role="tabpanel" aria-labelledby="favourite-tab">
+                <div class="container p-4">
+                    <div class="row row-cols-auto justify-content-center g-4">
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://www.nck.pl/upload/thumb/upload/Ziemia_Obiecana_-_kadr_z_filmu_auto_1600x800.jpg"
+                                     class="card-img-top" alt="Scena z filmu Ziemia Obiecana">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ziemia obiecana</h5>
+                                    <p class="card-text">
+                                        Powieść Władysława Reymonta wydana w 1899 roku. Akcja Ziemi Obiecanej rozgrywa
+                                        się w Łodzi, w latach 80. XIX wieku i opowiada o trzech przedsiębiorcach...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="data:image/jpeg;base64,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"
+                                     class="card-img-top" alt="Okładka Gron Gniewu">
+                                <div class="card-body">
+                                    <h5 class="card-title">Grona Gniewu</h5>
+                                    <p class="card-text">
+                                        W 1940 roku "Gronom gniewu" przyznano Nagrodę Pulitzera, w tym samym roku
+                                        John Ford nakręcił na ich podstawie film, w którym w jednej z głównych ról
+                                        wystąpił...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLcvXFZBenKXmbAgbhwwBOJNJDEHLXyG3moA&usqp=CAU"
+                                     class="card-img-top" alt="Okładka Braci Karamazow">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bracia Karamazow</h5>
+                                    <p class="card-text">
+                                        Bracia Karamazow to ostatnia i najdojrzalsza powieść Fiodora Dostojewskiego.
+                                        Opowiada dzieje czterech braci, których łączy tragedia: zabójstwo ojca.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="black-list" role="tabpanel" aria-labelledby="black-list-tab">
+                <div class="container p-4">
+                    <div class="row row-cols-auto justify-content-center g-4">
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://instytutksiazki.pl/files/cache/1/7/thumb_920x518_17e7919100363b18d81d1a7b763a741e1521579435.jpg"
+                                     class="card-img-top" alt="Przedwiośnie - otwarta książka">
+                                <div class="card-body">
+                                    <h5 class="card-title">Przedwiośnie</h5>
+                                    <p class="card-text">
+                                        Powieść Stefana Żeromskiego Przedwiośnie została wydana w 1924 roku.
+                                        Opisuje losy Cezarego Baryki, wychowanego w Imperium Rosyjskim, w Baku...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://1.bp.blogspot.com/-39KrvyrCjg4/Xn8JdEK3LcI/AAAAAAAAC9g/jR__elQeq_M-OhoJt7jN1oP2hrjYEZGVgCLcBGAsYHQ/s1600/DSC_0393.JPG"
+                                     class="card-img-top" alt="Okładka Alchemika">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alchemik</h5>
+                                    <p class="card-text">
+                                        Powieść wydana w 1988 w Rio de Janeiro przez Editora Rocco;
+                                        powieść na język polski przełożyli Barbara Stępień...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card bg-dark text-light h-100">
+                                <img src="https://www.derevolutionibus.pl/wp-content/uploads/2020/04/IMG_20200407_122841-scaled.jpg"
+                                     class="card-img-top" alt="Okładka Czarodziejskiej Góry">
+                                <div class="card-body">
+                                    <h5 class="card-title">Czarodziejska Góra</h5>
+                                    <p class="card-text">
+                                        Dwudziestotrzyletni Hans Castorp jedzie do Szwajcarii, by odwiedzić kuzyna,
+                                        który przebywa na leczeniu w sanatorium "Berghof"...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer bg-dark text-center text-light p-3 mt-auto">
+    All right reserved &copy 2022
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+
+</html>

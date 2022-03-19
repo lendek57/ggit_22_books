@@ -1,0 +1,36 @@
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25em rgba(112, 255, 69, 0.75);
+}
+
+.carousel-image {
+  object-fit: cover;
+  height: 18rem;
+}
+
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18rem;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.01),
+    50%,
+    rgba(20, 19, 20, 0.73)
+  );
+}
+
+.card {
+  width: 18rem;
+}
+
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
